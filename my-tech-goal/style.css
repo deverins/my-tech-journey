@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Arial', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
@@ -14,10 +14,15 @@ body {
   padding: 20px;
 }
 
-h1, h2, h3, h4, div{
+h1, h2, h3, h4, p{
   font-size: 16px;
-}
+  margin-top: 6px;
 
+}
+.slack-email:hover{
+  text-decoration-line: underline;
+  color: #007bff;
+}
 .container {
   background-color: white;
   padding: 20px;
