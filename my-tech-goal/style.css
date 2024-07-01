@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Arial", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  font-style: italic;
 }
 
 body {
@@ -14,12 +16,15 @@ body {
   padding: 20px;
 }
 
-h1, h2, h3, h4, p{
+h1,
+h2,
+h3,
+h4,
+p {
   font-size: 16px;
   margin-top: 6px;
-
 }
-.slack-email:hover{
+.slack-email:hover {
   text-decoration-line: underline;
   color: #007bff;
 }
@@ -51,13 +56,30 @@ header {
 .goals {
   text-align: left;
   margin-bottom: 20px;
+  margin-left: 30px;
 }
 
 .goals ul {
   list-style-type: disc;
   padding-left: 20px;
 }
-
+.my-goals li {
+  font-size: 16px;
+  letter-spacing: normal;
+  white-space: pre-line;
+}
+.goals-heading {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: underline;
+}
+li {
+  margin-top: 8px;
+}
+.skill-list {
+  margin-bottom: 20px;
+}
 .links a {
   display: inline-block;
   margin: 10px 20px;
@@ -72,10 +94,10 @@ header {
 
 @media (max-width: 768px) {
   .goals ul {
-      padding-left: 10px;
+    padding-left: 10px;
   }
 
   .links a {
-      margin: 10px;
+    margin: 10px;
   }
 }
