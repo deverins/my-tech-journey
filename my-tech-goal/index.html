@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Tech Goals site</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tech Goals</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="container">
-    <h1 class="title">My Tech Goal for the next two years</h1>
-    <img src="" alt="" srcset="">
-  </main>
+    <div class="container">
+        <header>
+            <img data-testid="slackProfilePicture" src="./assets/1719827605770.jpg" alt="Slack Profile Picture" class="profile-pic">
+            <h1 data-testid="slackDisplayName">Pamilerin olayiwola</h1>
+            <p data-testid="slackEmail">olayiwolapamilerin34@gmail.com</p>
+        </header>
+        <main>
+            <section class="current-info">
+                <h3>Current Time: <span id="currentTime" data-testid="currentTimeUTC">--:--:--</span> UTC</h3>
+                <h4>Current Day: <span id="currentDay" data-testid="currentDay">---</span></h4>
+            </section>
+            <section class="goals">
+                <h2>My Goals for the Next 2 Years</h2>
+                <ul data-testid="myGoals">
+                    <li>Learn HTML, CSS, and JavaScript</li>
+                    <li>Create responsive web pages</li>
+                    <li>Build a simple chatbot using JavaScript</li>
+                    <li>Learn about Git and version control</li>
+                    <li>Contribute to open-source projects</li>
+                    <li>Learn about web development best practices</li>
+                    <li>Get certified as a web developer</li>
+                    <li>Join a web development community</li>
+                    <li>Learn about the future of web development</li>
+                    <li>Create a website for a local business</li>
+                    <li>Learn about web security and privacy</li>
+                    <li>Learn about the role of a web developer in a team</li>
+                    <li>Become a certified web developer</li>
+                    <li>Be successful in my chosen field</li>
+                </ul>
+            </section>
+            <section class="links">
+                <a href="https://hng.tech/learn" data-testid="hngLink">Learn More at HNG</a>
+                <a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a>
+                <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
