@@ -21,13 +21,15 @@ h2,
 h3,
 h4,
 p {
-  font-size: 16px;
+  font-size: 1rem;
   margin-top: 6px;
 }
+
 .slack-email:hover {
   text-decoration-line: underline;
   color: #007bff;
 }
+
 .container {
   background-color: white;
   padding: 20px;
@@ -47,6 +49,7 @@ header {
   height: 150px;
   border-radius: 50%;
   margin-bottom: 10px;
+  max-width: 100%;
 }
 
 .current-info {
@@ -63,23 +66,28 @@ header {
   list-style-type: disc;
   padding-left: 20px;
 }
+
 .my-goals li {
-  font-size: 16px;
+  font-size: 1rem;
   letter-spacing: normal;
-  white-space: pre-line;
+  margin-top: 10px;
 }
+
 .goals-heading {
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 800;
   text-decoration: underline;
 }
-li {
-  margin-top: 8px;
-}
+
 .skill-list {
   margin-bottom: 20px;
 }
+
+.skill-list li {
+  margin-top: 8px;
+}
+
 .links a {
   display: inline-block;
   margin: 10px 20px;
@@ -93,6 +101,10 @@ li {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
   .goals ul {
     padding-left: 10px;
   }
