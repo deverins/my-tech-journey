@@ -2,14 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch('data.json')
     .then(response => response.json())
     .then(data => {
-      // Render profile information
-      const profile = document.getElementById('profile');
-      profile.innerHTML = `
-        <img data-testid="slackProfilePicture" src="${data.profile.image}" alt="Slack Profile Picture" class="profile-pic" />
-        <h1 data-testid="slackDisplayName">${data.profile.name}</h1>
-        <p data-testid="slackEmail" class="slack-email">${data.profile.email}</p>
-      `;
-
       // Render skills
       const skillsList = document.getElementById('skills-list');
       data.skills.forEach(skill => {
