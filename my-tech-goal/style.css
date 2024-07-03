@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Arial", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-style: italic;
+  font-family: Arial, sans-serif;
 }
 
 body {
@@ -13,20 +12,6 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: 20px;
-}
-
-h1,
-h2,
-h3,
-h4,
-p {
-  font-size: 1rem;
-  margin-top: 6px;
-}
-
-.slack-email:hover {
-  text-decoration-line: underline;
-  color: #007bff;
 }
 
 .container {
@@ -43,8 +28,41 @@ header {
   margin-bottom: 20px;
 }
 
+.profile img {
+  border-radius: 50%;
+}
+.slack-name {
+  font-size: 1em;
+  margin-top: 12px;
+  font-weight: bold;
+  color: black;
+  margin-left: 20px;
+}
+.slack-link {
+  text-decoration: none;
+  color: #007bff;
+}
+
 .current-info {
-  margin-bottom: 20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.current-info span {
+  align-items: center;
+  display: flex;
+}
+.slack-email {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 1em;
+}
+.slack-email a {
+  color: #007bff;
+  text-decoration: none;
 }
 
 .goals {
@@ -52,31 +70,21 @@ header {
   margin-top: 20px;
   margin-left: 30px;
 }
-
-.goals ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.my-goals li {
-  font-size: 1rem;
-  letter-spacing: normal;
-  margin-top: 10px;
-}
-
-.goals-heading {
-  margin-bottom: 10px;
-  font-size: 1.125rem;
-  font-weight: 800;
+.goals h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #007bff;
   text-decoration: underline;
 }
-
-.skill-list {
-  margin-bottom: 20px;
+.goal {
+  background-color: #e9f5ff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-
-.skill-list li {
-  margin-top: 8px;
+.goal h3 {
+  padding: 20px;
 }
 
 .links a {
@@ -86,9 +94,20 @@ header {
   text-decoration: none;
   font-weight: bold;
 }
+.footer {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  text-align: center;
+}
 
-.links a:hover {
-  text-decoration: underline;
+.footer .links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
 }
 
 @media (max-width: 768px) {
@@ -96,11 +115,25 @@ header {
     padding: 10px;
   }
 
-  .goals ul {
-    padding-left: 10px;
+  .footer .links {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slack-email {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  .footer .links {
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 10px;
   }
 
-  .links a {
-    margin: 10px;
+  .footer .links a {
+    padding: 8px;
   }
 }
